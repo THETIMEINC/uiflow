@@ -49,7 +49,7 @@ var parseTags = function(listOfNode, fileName) {
   var errorMessage = parseError(fileName);
   listOfNode.forEach(function(node) {
     var tag = node[0];
-    if (tag == "whiteline") {
+    if (tag == "whiteline" || tag == "commentline") {
       return;
     }
     if (tag == "section") {
